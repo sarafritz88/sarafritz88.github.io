@@ -1,0 +1,462 @@
+html,
+body {
+  background-image: linear-gradient(135deg, #fdfcfb 20%, #e2d1c3 100%);
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+}
+.btn {
+  width: 10vw;
+}
+.smallWords:hover {
+  position: center;
+  background: linear-gradient(270deg, #EEAF61, #FB9062, #CE4993, #6A0D83);
+  background-size: 800% 800%;
+  -webkit-animation: colors 5s ease infinite;
+  -moz-animation: colors 5s ease infinite;
+  animation: colors 5s ease infinite;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.experience {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.largeWords {
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  color: #1D1F20;
+  position: relative;
+  padding: 1vw;
+  font-size: 10vh;
+}
+.largeWords2 {
+  width: 20vw;
+  flex-direction: column;
+  color: #1D1F20;
+  position: relative;
+  padding: 1vw;
+  font-size: 10vh;
+  height: 20vh;
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 9vh;
+}
+.largeWords3 {
+  width: 20vw;
+  flex-direction: column;
+  color: #1D1F20;
+  position: relative;
+  padding: 1vw;
+  font-size: 10vh;
+  height: 20vh;
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 8vh;
+}
+.largeWords5 {
+  width: 20vw;
+  flex-direction: column;
+  color: #1D1F20;
+  position: relative;
+  padding: 1vw;
+  font-size: 10vh;
+  height: 20vh;
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 9vh;
+}
+.fab {
+  color: #330A68;
+}
+.fab:hover {
+  color: #6FD1D7;
+  text-shadow: 3px 6px #272634;
+}
+.content {
+  height: 82vh;
+  width: 50vw;
+  margin-right: 5vw;
+  display: none;
+  box-shadow: 5px 10px 18px #888888;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border-radius: 3px;
+}
+.contentBox {
+  height: 75vh;
+  width: 30vw;
+  margin: 2vh;
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 10px 18px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 1vh;
+}
+.projectBox {
+  border: 1px solid black;
+  height: 20vh;
+  width: 30vw;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+}
+.projectBox:hover {
+  height: 50vh;
+  width: 50vw;
+}
+.active {
+  height: 100vh;
+  width: 50vw;
+}
+.active .largeWords {
+  z-index: 5;
+}
+.active .content {
+  display: block;
+}
+.smallWords {
+  height: 100vh;
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  box-shadow: 5px 10px 18px #888888;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.tipText {
+  font-size: 3vh;
+  transform: rotate(270deg);
+  width: 35vw;
+  margin: 0;
+  color: #1D1F20;
+}
+p {
+  margin: 1vh;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.largeWords {
+  height: 20vh;
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.largeWords2 {
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+}
+.largeWords3 {
+  font-size: 6vh;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  font-size: 2vh;
+}
+.largeWords5 {
+  font-size: 6vh;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.smallWords {
+  height: 100vh;
+}
+@media only screen and (max-width: 650px) {
+  .tipText {
+    font-size: 2vw;
+  }
+  .contentBox {
+    display: flex;
+    justify-content: center;
+  }
+  .largeWords {
+    font-size: 3vh;
+  }
+  .largeWords2 {
+    font-size: 3vh;
+  }
+  .largeWords3 {
+    font-size: 3vh;
+  }
+  .largeWords5 {
+    font-size: 3vh;
+  }
+  h4 {
+    font-size: 1.7vh;
+    display: flex;
+    align-items: center;
+  }
+  ul,
+  li {
+    display: none;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    display: none;
+  }
+}
+.gradient {
+  position: center;
+  background: linear-gradient(270deg, #FB2E01, #FB7B00, #FC5600, #FC4302);
+  background-size: 800% 800%;
+  -webkit-animation: colors 3s ease infinite;
+  -moz-animation: colors 3s ease infinite;
+  animation: colors 3s ease infinite;
+}
+@-webkit-keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.gradientb {
+  position: center;
+  background: linear-gradient(270deg, #EEAF61, #FB9062, #CE4993, #6A0D83);
+  background-size: 800% 800%;
+  -webkit-animation: colors 5s ease infinite;
+  -moz-animation: colors 5s ease infinite;
+  animation: colors 5s ease infinite;
+}
+@-webkit-keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container {
+  border: 1px solid black;
+  height: 80vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sea {
+  z-index: 1;
+}
+.box {
+  height: 75vh;
+  max-height: 5000px;
+  max-width: 410px;
+  width: 30vw;
+  position: center;
+  background: linear-gradient(270deg, #EEAF61, #FB9062, #CE4993, #6A0D83);
+  background-size: 800% 800%;
+  -webkit-animation: colors 5s ease infinite;
+  -moz-animation: colors 5s ease infinite;
+  animation: colors 5s ease infinite;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+/*
+.sun {
+  border: 1px solid black;
+  height: 50vh;
+  width: 30vw;
+  border-radius:50%;
+  background-color:orange;
+  z-index:2;
+  position: relative;
+  left: 5vw;
+  bottom: 5vw;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  
+}
+*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wave {
+  height: 3vh;
+  width: 100vw;
+  position: relative;
+  display: block;
+}
+@keyframes ani {
+  0% {
+    left: -10vw;
+  }
+  50% {
+    left: -1vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+@keyframes ani2 {
+  0% {
+    right: 10vw;
+  }
+  50% {
+    right: 1vw;
+  }
+  100% {
+    right: 10vw;
+  }
+}
+.wave1 {
+  z-index: 5;
+  animation: ani 12s infinite;
+  height: 2vh;
+}
+.boat {
+  z-index: 6;
+  position: relative;
+  height: 1vh;
+  bottom: 4vh;
+}
+.wave2 {
+  z-index: 7;
+  animation: ani2 9s infinite;
+}
+.wave3 {
+  z-index: 8;
+  animation: ani 7s infinite;
+}
+.wave4 {
+  z-index: 9;
+  animation: ani2 5s infinite;
+}
+.wave5 {
+  z-index: 10;
+  animation: ani 7s infinite;
+}
+.wave6 {
+  z-index: 11;
+  animation: ani 7s infinite;
+}
+.wave7 {
+  z-index: 12;
+  animation: ani 5s infinite;
+}
+.wave8 {
+  z-index: 13;
+  animation: ani 7s infinite;
+}
+.wave9 {
+  z-index: 14;
+  animation: ani 4s infinite;
+}
+.wave10 {
+  z-index: 15;
+  animation: ani 4s infinite;
+}
+.wave10 {
+  z-index: 16;
+  animation: ani 7s infinite;
+}
