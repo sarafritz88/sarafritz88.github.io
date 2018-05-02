@@ -1,5 +1,6 @@
 html,
 body {
+  overflow: hidden;
   background-image: linear-gradient(135deg, #fdfcfb 20%, #e2d1c3 100%);
 }
 #container {
