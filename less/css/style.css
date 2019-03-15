@@ -3,7 +3,8 @@
   color: white;
 }
 body {
-  background-color: black !important;
+  background-color: #0a0001;
+background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
 }
 .wrapper {
   height: 8em;
