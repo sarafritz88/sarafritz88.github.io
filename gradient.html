@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Gradient Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/gradstyle.css">
+
+
+</head>
+
+<body>
+
+<div class = "container-fluid">
+    <div class="row banner"><h1 class="fancy">Animated Gradient Generator</h1></div>
+    <div class="row">
+        <div class="col colors">
+            <p>Pick your colors, add class "gradient" to your div.</p>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="block inputs row">
+            <div class="col">
+                <input type="color" id="base1" value="#ffc600">
+            </div>
+            <div class="col">
+                <input type="color" id="base2" value="#fb00ff">
+            </div>
+            <div class="col">
+                <input type="color" id="base3" value="#153fca">
+            </div>
+            <div class="col">
+                <input type="color" id="base4" value="#15ca56">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col copy">
+            <div id="copyme" class="block code">
+                <p>
+                    .gradient {<br>
+                    width: 100%;<br>
+                    height: 100%;<br>
+                    position: center;<br>
+                    background: linear-gradient(270deg,<div class="list" id="list"></div>);<br>
+                background-size: 800% 800%;<br>
+                -webkit-animation: colors 30s ease infinite;<br>
+                -moz-animation: colors 30s ease infinite;<br>
+                animation: colors 15s ease infinite;<br>
+                }<br>
+                @-webkit-keyframes colors {<br>
+                0% {<br>
+                background-position: 0% 50%;<br>
+                }<br>
+                50% {<br>
+                background-position: 100% 50%;<br>
+                }<br>
+                100% {<br>
+                background-position: 0% 50%;<br>
+                }<br>
+                }<br>
+                @-moz-keyframes colors {<br>
+                0% {<br>
+                background-position: 0% 50%;<br>
+                }<br>
+                50% {<br>
+                background-position: 100% 50%;<br>
+                }<br>
+                100% {<br>
+                background-position: 0% 50%;<br>
+                }<br>
+                }<br>
+                @keyframes colors {<br>
+                0% {<br>
+                background-position: 0% 50%;<br>
+                }<br>
+                50% {<br>
+                background-position: 100% 50%;<br>
+                }<br>
+                100% {<br>
+                background-position: 0% 50%;<br>
+                }<br>
+                }<br>
+                </p>
+            </div>
+            <button type = "button" class="btn btn-dark copy-letter-button" data-clipboard-action="copy" data-clipboard-target="#copyme">Copy Gradient Code</button>
+        </div>
+
+    </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js'></script>
+
+
+
+<script  src="js/gradient.js"></script>
+
+
+
+
+</body>
+
+</html>
