@@ -1,0 +1,113 @@
+:root {
+    --base1: #ffc600;
+    --base2: #fb00ff;
+    --base3: #153fca;
+    --base4: #15ca56;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: center;
+    background: linear-gradient(270deg, var(--base1), var(--base2), var(--base3), var(--base4));
+    background-size: 800% 800%;
+    -webkit-animation: colors 30s ease infinite;
+    -moz-animation: colors 30s ease infinite;
+    animation: colors 15s ease infinite;
+}
+.container-fluid {
+    padding-top: 50px;
+}
+.row {
+    max-width: 1100px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy {
+    flex-direction: column;
+}
+.fancy {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.code {
+    height: 200px;
+    width: 250px;
+    overflow: scroll;
+}
+button {
+    margin-top: 10px;
+}
+.block {
+    padding: 10px;
+    background-color: #1f1e1e52;
+    border-radius: 5px;
+}
+.colors p {
+    color: white;
+    font-size: 1em;
+}
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+.gradient {
+    width: 100%;
+    height: 100%;
+    position: center;
+    background: linear-gradient(270deg, var(--base1), var(--base2), var(--base3), var(--base4));
+    background-size: 800% 800%;
+    -webkit-animation: colors 30s ease infinite;
+    -moz-animation: colors 30s ease infinite;
+    animation: colors 15s ease infinite;
+}
+@-webkit-keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-moz-keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
