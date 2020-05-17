@@ -76,14 +76,11 @@ function checkAchievements() {
     if(localStorage.clickcount === '5'){
         alert('achievement Unlocked!: Tester')
     }
-    if(localStorage.clickcount === '100'){
+    if(localStorage.clickcount === '50'){
         alert('achievement Unlocked!: Halfway There')
     }
     if(localStorage.clickcount === '100'){
         alert('achievement Unlocked!: Autoclick Unlocked, but it will take all your money')
-    }
-    if(localStorage.clickcount === '150'){
-        alert('achievement Unlocked!: Multiply.')
     }
     if(localStorage.clickcount === '500'){
         alert('achievement Unlocked!: yay!')
