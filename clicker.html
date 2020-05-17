@@ -9,25 +9,36 @@
                 } else {
                     localStorage.clickcount = 1;
                 }
+                document.getElementById('clicker').style.backgroundColor = randomColors();
                 document.getElementById("result").innerHTML = localStorage.clickcount;
             } else {
                 document.getElementById("result").innerHTML = ":(";
             }
         }
+
+        function randomColors() {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
     </script>
     <style>
-        button{
+        #clicker{
             margin: auto;
             border: 1px solid black;
             color: black;
             height: 100px;
             width: 100px;
         }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div class="container">
+<p><button onclick="clickCounter()" id="clicker" type="button">Click me!</button></p>
 <div id="result"></div>
+</div>
 </body>
 </html>
