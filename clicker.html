@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function clickCounter() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = localStorage.clickcount;
+            } else {
+                document.getElementById("result").innerHTML = ":(";
+            }
+        }
+    </script>
+    <style>
+        button{
+            margin: auto;
+            border: 1px solid black;
+            color: black;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+</body>
+</html>
