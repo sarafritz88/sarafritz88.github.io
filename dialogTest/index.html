@@ -149,7 +149,7 @@
     #feedback.ok  { color: #4f8; }
     #feedback.err { color: #f64; }
   </style>
-<script>if ("serviceWorker" in navigator) { navigator.serviceWorker.register("coi-serviceworker.js"); }</script>
+<script>if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/dialogTest/coi-serviceworker.js", { scope: "/dialogTest/" }).then(function(reg) { if (reg.active) { console.log("COI SW already active"); } else { console.log("COI SW installed, reloading..."); reg.addEventListener("updatefound", function() { window.location.reload(); }); } }).catch(function(e) { console.error("SW registration failed:", e); }); }</script>
 </head>
 <body>
 
